@@ -10,7 +10,7 @@ export default function Navbar(props) {
         <>{
             !showSidebar ?
                 (
-                    <div className="flex flex-col">
+                    <div className=" fixed top-0 flex right-10 flex-col">
                         <a
                             className="flex w-auto h-auto text-4xl text-white items-center cursor-pointer self-center"
                             onClick={() => setShowSidebar(!showSidebar)}> x                    </a>
@@ -21,7 +21,7 @@ export default function Navbar(props) {
                     </div>
                 ) : <svg
                     onClick={() => setShowSidebar(!showSidebar)}
-                    className="fixed  z-30 flex items-center cursor-pointer right-10 top-6"
+                    className="fixed z-30 flex items-center cursor-pointer right-10 top-6"
                     fill="#000000"
                     viewBox="0 0 100 80"
                     width="40"
