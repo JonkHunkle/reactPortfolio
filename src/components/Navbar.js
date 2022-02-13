@@ -1,6 +1,5 @@
 import { useState } from "react"
 import React from 'react'
-import { App } from "../App"
 
 export default function Navbar(props) {
 
@@ -13,7 +12,7 @@ export default function Navbar(props) {
                 (
                     <div className="flex flex-col">
                         <a
-                            className="style-none flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
+                            className="flex w-auto h-auto text-4xl text-white items-center cursor-pointer self-center"
                             onClick={() => setShowSidebar(!showSidebar)}> x                    </a>
 
                         <button class='hover:bg-zinc-300' onClick={() => { props.handleClick('About') }}>About</button>

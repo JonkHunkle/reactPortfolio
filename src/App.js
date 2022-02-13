@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div class='flex h-screen flex-col bg-gradient-to-br from-indigo-200 via-purple-300 via-rose-600 to-pink-300'>
+    <div class='flex h-screen w-screen flex-col bg-gradient-to-br from-indigo-200 via-purple-300 via-rose-600 to-pink-300'>
       <Header handleClick={handleClick} />
       {whichPage()}
     </div>);
