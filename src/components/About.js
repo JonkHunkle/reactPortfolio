@@ -5,7 +5,7 @@ export default function About() {
 
 
     return (
-        <div class='flex justify-between     flex-col'>
+        <div class='flex justify-between md:flex-row flex-col'>
             <img class='pl-10 pt-10 rounded-t-full rounded-b-full self-center object-contain' alt='me!' width='500' src={MyPhoto} />
             <span class='flex-col self-center'>
                 <h1 class='text-center text-7xl my-10 underline'>About David</h1>
