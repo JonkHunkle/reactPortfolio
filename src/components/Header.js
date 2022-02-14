@@ -8,12 +8,12 @@ export default function Header(props) {
     return (
         <>
             <div class='flex md:justify-around justify-between'>
-                <div class='flex h-25 p-6 md:text-9xl text-6xl mt-5'>Czerwinski</div>
+                <div class='flex md:text-8xl text-6xl mt-9'>Czerwinski</div>
 
-
-                {isMobile ? (<Navbar handleClick={props.handleClick} />) : (<div className=' flex w-screen h-auto justify-evenly items-center'><button class='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('About') }}>About</button>
-                    <button class='hover:bg-zinc-300 h-1/3 ' onClick={() => { props.handleClick('Contact') }}>Contact</button>
-                    <button class='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('Projects') }}>Projects</button></div>)}
+                {isMobile ?
+                    (<Navbar handleClick={props.handleClick} />) : (<div className=' flex h-auto justify-evenly items-center'><button class='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('About') }}>About</button>
+                        <button class='hover:bg-zinc-300 h-1/3 ' onClick={() => { props.handleClick('Contact') }}>Contact</button>
+                        <button class='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('Projects') }}>Projects</button></div>)}
 
             </div>
         </>)

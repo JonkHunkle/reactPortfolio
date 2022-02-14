@@ -4,6 +4,7 @@ import About from './components/About';
 import Projects from "./components/Projects"
 import React, { useState } from 'react'
 import './index.css'
+import Footer from './components/Footer';
 
 function App() {
   const [state, setState] = useState('About');
@@ -22,7 +23,7 @@ function App() {
   }
   const whichBg = () => {
     if (state === 'About') {
-      return ('flex h-full md:h-screen w-screen flex-col bg-gradient-to-br from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
+      return ('flex h-full w-full flex-col bg-gradient-to-br from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
     } else if (state === 'Contact') {
       return ('h-screen w-screen bg-gradient-to-bl from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
     } else if (state === 'Projects') {
@@ -34,7 +35,8 @@ function App() {
     <div class={whichBg()}>
       <Header handleClick={handleClick} />
       {whichPage()}
-    </div>);
+      <Footer />
+    </div>)
 }
 
 export default App;

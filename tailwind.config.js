@@ -3,7 +3,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        megaspin: {
+          '0% 100%': {
+            transform: 'scaleX()'
+          }, '50%': {
+            transform: 'scaleX(-1)'
+          }
+
+        }
+      }
+    }, animation: {
+      megaspin: 'megaspin 3s infinite'
+    }
   },
   plugins: [],
 }
