@@ -7,6 +7,6 @@ This is my portfolio deployed using GH-Pages
 [My live portfolio!] (https://jonkhunkle.github.io/reactportfolio/)
 
 ## Contact Information 
-Github: https://github.com/JonkHunklw
+Github: [My Github!](https://github.com/JonkHunkle)
 
-Email: czerwinskicodes@gmaail.com
+Email: czerwinskicodes@gmail.com
