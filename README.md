@@ -1,7 +1,7 @@
 # React Porfolio
 
 ## Notes
-This is my portfolio deployed using GH-Pages
+This is my portfolio built with React, styled with TailwindCSS, and deployed using GH-Pages
 
 ## Link to Deployed Application
 [My live portfolio!](https://jonkhunkle.github.io/reactportfolio/)
