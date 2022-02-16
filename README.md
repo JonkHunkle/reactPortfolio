@@ -1,4 +1,4 @@
-# reactportfolio# 
+# React Porfolio
 
 ## Notes
 This is my portfolio deployed using GH-Pages
