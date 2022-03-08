@@ -7,8 +7,27 @@
     padding: 0%;
     font-family:Arial, Helvetica, sans-serif
 }
-
-
+#textEditor{
+    background-image: url(./assets/images/text.png);
+}
+#tracker{
+    background-image: url(./assets/images/tracker.png);
+}
+#techblog{
+background-image: url(./assets/images/techblog.png)
+}
+#project2{
+    background-image: url(./assets/images/lifetracker.png);
+}
+#project1{
+    background-image: url(./assets/images/project1.png)
+}
+#planner{
+background-image: url(./assets/images/planner.png);
+}
+.black-border{
+    border:solid
+}
 button{
     border:solid;
     text-align: center;

@@ -25,14 +25,14 @@ function App() {
     if (state === 'About') {
       return ('flex h-full w-full flex-col bg-gradient-to-br from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
     } else if (state === 'Contact') {
-      return ('h-screen w-screen bg-gradient-to-bl from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
+      return (' h-full md:h-screen w-screen bg-gradient-to-bl from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
     } else if (state === 'Projects') {
-      return ('flex h-screen w-screen flex-col bg-gradient-to-b from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
+      return ('flex h-full md:h-screen w-screen flex-col bg-gradient-to-b from-indigo-200 via-purple-300 via-rose-600 to-pink-300')
     }
   }
 
   return (
-    <div class={whichBg()}>
+    <div className={whichBg()}>
       <Header handleClick={handleClick} />
       {whichPage()}
       <Footer />

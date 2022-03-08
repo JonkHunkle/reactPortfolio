@@ -15,9 +15,10 @@ export default function Navbar(props) {
                             className="flex w-auto h-auto text-4xl text-white items-center cursor-pointer self-center"
                             onClick={() => setShowSidebar(!showSidebar)}> x                    </a>
 
-                        <button class='hover:bg-zinc-300' onClick={() => { props.handleClick('About') }}>About</button>
-                        <button class='hover:bg-zinc-300' onClick={() => { props.handleClick('Contact') }}>Contact</button>
-                        <button class='hover:bg-zinc-300' onClick={() => { props.handleClick('Projects') }}>Projects</button>
+                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('About') }}>About</button>
+                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Contact') }}>Contact</button>
+                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Projects') }}>Projects</button>
+
                     </div>
                 ) : <svg
                     onClick={() => setShowSidebar(!showSidebar)}

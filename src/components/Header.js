@@ -7,13 +7,13 @@ export default function Header(props) {
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
     return (
         <>
-            <div class='flex md:justify-around justify-between'>
-                <div class='flex md:text-8xl text-6xl mt-9'>Czerwinski</div>
+            <div className='flex md:justify-around justify-between'>
+                <div className='flex md:text-8xl text-6xl mt-9'>Czerwinski</div>
 
                 {isMobile ?
-                    (<Navbar handleClick={props.handleClick} />) : (<div className=' flex h-auto justify-evenly items-center'><button class='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('About') }}>About</button>
-                        <button class='hover:bg-zinc-300 h-1/3 ' onClick={() => { props.handleClick('Contact') }}>Contact</button>
-                        <button class='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('Projects') }}>Projects</button></div>)}
+                    (<Navbar handleClick={props.handleClick} />) : (<div className=' flex h-auto justify-evenly items-center'><button className='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('About') }}>About</button>
+                        <button className='hover:bg-zinc-300 h-1/3 ' onClick={() => { props.handleClick('Contact') }}>Contact</button>
+                        <button className='hover:bg-zinc-300 h-1/3' onClick={() => { props.handleClick('Projects') }}>Projects</button></div>)}
 
             </div>
         </>)
