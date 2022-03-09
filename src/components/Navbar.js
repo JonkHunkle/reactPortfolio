@@ -18,6 +18,7 @@ export default function Navbar(props) {
                         <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('About') }}>About</button>
                         <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Contact') }}>Contact</button>
                         <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Projects') }}>Projects</button>
+                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Resume') }}>Resume</button>
 
                     </div>
                 ) : <svg
