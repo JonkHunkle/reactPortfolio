@@ -36,3 +36,14 @@ button{
     border-radius: 9999px;
     
 }
+
+a{
+        text-align: center;
+        border:solid;
+        text-align: center;
+        width: 10rem;
+        background-color: #ebecf0;
+        border-radius: 9999px;
+        
+    
+}

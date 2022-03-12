@@ -6,7 +6,7 @@ import Projects from "./components/Projects"
 import React from 'react'
 import './index.css'
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -17,9 +17,9 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<About />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='resume' element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
         </div>
         <Footer />
