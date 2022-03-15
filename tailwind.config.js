@@ -5,17 +5,18 @@ module.exports = {
       keyframes: {
         megaspin: {
           '0% 100%': {
-            transform: 'scaleX()'
+            transform: 'scaleX(1)'
           }, '50%': {
             transform: 'scaleX(-1)'
           }
 
         }
+
       }
     }, animation: {
       megaspin: 'megaspin 3s infinite'
     }
 
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

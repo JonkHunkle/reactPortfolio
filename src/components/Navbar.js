@@ -1,10 +1,10 @@
 import { useState } from "react"
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
 
     const [showSidebar, setShowSidebar] = useState('false')
-
 
     return (
         <>{
@@ -12,18 +12,18 @@ export default function Navbar(props) {
                 (
                     <div className=" fixed top-0 flex right-10 flex-col">
                         <a
-                            className="flex w-auto h-auto text-4xl text-white items-center cursor-pointer self-center"
+                            className=" flex w-auto bg-transparent h-auto text-4xl text-white items-center cursor-pointer self-center"
                             onClick={() => setShowSidebar(!showSidebar)}> x                    </a>
 
-                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('About') }}>About</button>
-                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Contact') }}>Contact</button>
-                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Projects') }}>Projects</button>
-                        <button className='hover:bg-zinc-300' onClick={() => { props.handleClick('Resume') }}>Resume</button>
+                        <Link to='/' className='hover:bg-zinc-300 h-1/3 flex flex-col justify-around navBtn' onClick={() => setShowSidebar(!showSidebar)}>Home</Link>
+                        <Link to='/contact' className='hover:bg-zinc-300 h-1/3 flex flex-col justify-around navBtn' onClick={() => setShowSidebar(!showSidebar)}>Contact</Link>
+                        <Link to='/projects' className='hover:bg-zinc-300 h-1/3 flex flex-col justify-around navBtn' onClick={() => setShowSidebar(!showSidebar)}>Projects</Link>
+                        <Link to='/resume' className='hover:bg-zinc-300 h-1/3 flex flex-col justify-around navBtn' onClick={() => setShowSidebar(!showSidebar)}>Resume</Link>
 
                     </div>
                 ) : <svg
                     onClick={() => setShowSidebar(!showSidebar)}
-                    className="fixed z-30 flex items-center cursor-pointer right-10 top-6"
+                    className="fixed z-30 flex items-center cursor-pointer  right-10 top-6"
                     fill="#000000"
                     viewBox="0 0 100 80"
                     width="40"
