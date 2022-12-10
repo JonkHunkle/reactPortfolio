@@ -9,7 +9,7 @@ export default function Header(props) {
     return (
         <>
             <div id='header' className='flex bg-slate-400 bg-opacity-25 w-screen md:justify-around z-30 justify-between  fixed top-0'>
-                <Link to='/' className='flex md:text-8xl hover:text-blue-400 text-5xl mt-9'>Czerwinski</Link>
+                <Link to='/' className='flex md:text-8xl hover:text-blue-800 text-5xl mt-9'>Czerwinski</Link>
 
                 {isMobile ?
                     (<Navbar handleClick={props.handleClick} />) : (<div className=' flex h-auto justify-evenly items-center'>

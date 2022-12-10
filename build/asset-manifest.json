@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/reactportfolio/static/css/main.7c9fe1da.css",
-    "main.js": "/reactportfolio/static/js/main.c04d1992.js",
+    "main.css": "/reactportfolio/static/css/main.edd03cdb.css",
+    "main.js": "/reactportfolio/static/js/main.489b7723.js",
     "static/media/david.jpeg": "/reactportfolio/static/media/david.dcae8547a54e7d73d043.jpeg",
-    "static/media/tracker.png": "/reactportfolio/static/media/tracker.1152255289f638adb596.png",
+    "static/media/mistyMountain.jpeg": "/reactportfolio/static/media/mistyMountain.02f8e9f7785b6deaeef6.jpeg",
     "static/media/lifetracker.png": "/reactportfolio/static/media/lifetracker.60dc0bf3dafcaac992c4.png",
     "static/media/project1.png": "/reactportfolio/static/media/project1.5ae5afec000d5e0f44c5.png",
     "static/media/planner.png": "/reactportfolio/static/media/planner.0a0c6043d3f926f85672.png",
@@ -14,11 +14,11 @@
     "static/media/twitter-svg.svg": "/reactportfolio/static/media/twitter-svg.5af9ad4a0f77c04c09547aff70dfb909.svg",
     "index.html": "/reactportfolio/index.html",
     "static/media/linkedin.svg": "/reactportfolio/static/media/linkedin.b2aeca0a2d0eb3ad6138f309873f745a.svg",
-    "main.7c9fe1da.css.map": "/reactportfolio/static/css/main.7c9fe1da.css.map",
-    "main.c04d1992.js.map": "/reactportfolio/static/js/main.c04d1992.js.map"
+    "main.edd03cdb.css.map": "/reactportfolio/static/css/main.edd03cdb.css.map",
+    "main.489b7723.js.map": "/reactportfolio/static/js/main.489b7723.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c9fe1da.css",
-    "static/js/main.c04d1992.js"
+    "static/css/main.edd03cdb.css",
+    "static/js/main.489b7723.js"
   ]
 }

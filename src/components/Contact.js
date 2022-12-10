@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-
+// const nodemailer = require('nodemailer');
+// import nodemailer from 'nodemailer'
+// require('dotenv').config()
+import emailjs from '@emailjs/browser'
 
 
 export default function Contact() {
@@ -7,9 +10,7 @@ export default function Contact() {
     const [formState, setForm] = useState({ name: '', email: '', message: '' })
     const { name, email, message } = formState;
 
-
-
-    function handleSubmit(e) {
+    const handleSubmit =  async (e) => {
 
         e.preventDefault();
 
@@ -18,11 +19,18 @@ export default function Contact() {
         if (name === '' || email === '' || message === '') {
             alert('You cannot send an empty form!')
         } else {
+
+            let params = {
+                from_name:name,
+                sender_email:email,
+                message: message
+            }
+            let res = await emailjs.send('service_1uebwag','template_s57dup6', params, 'LLY_bqRvlGpeZJNIC')
+                        
             alert('thank you for trying out my contact page! Check out my resume or the links below for ways to contact me!')
 
 
             setForm({ name: '', email: '', message: '' })
-            console.log(formState)
             window.location.reload(false)
         }
     }
@@ -51,10 +59,10 @@ export default function Contact() {
     }
 
     return (
-        <div className='h-screen flex flex-col place-content-center w-full bg-gradient-to-bl from-indigo-200 via-purple-300 via-rose-600 to-pink-300'>
+        <div className='h-screen flex flex-col place-content-center w-full'>
             <div className='flex flex-col justify-around '>
 
-                <p className=' m-5 text-2xl text-center '>Contact page is currently under construction!<br /> Feel free to reach out using the links bellow!</p>
+                <p className=' m-5 text-2xl text-center '>Lets connect! <br/> <br/> Fill out the form below and I will get back to you soon!</p>
 
                 <div name='infoForm' className='flex h-full flex-col'>
                     <div className="flex flex-col self-center place-content-center contents-center w-2/3 p-6 rounded-lg shadow-lg bg-slate-200 bg-opacity-25">
