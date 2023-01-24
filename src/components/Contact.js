@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-// const nodemailer = require('nodemailer');
-// import nodemailer from 'nodemailer'
-// require('dotenv').config()
+import axios from 'axios';
 import emailjs from '@emailjs/browser'
 
 
@@ -11,13 +9,11 @@ export default function Contact() {
     const { name, email, message } = formState;
 
     const handleSubmit =  async (e) => {
-
+            let {data:cat} = await axios.get(`https://api.thecatapi.com/v1/images/search`)
         e.preventDefault();
-
-        console.log(formState)
-
+console.log(cat)
         if (name === '' || email === '' || message === '') {
-            alert('You cannot send an empty form!')
+            alert('You cannot send an empty form! If you used autofill, please try again.')
         } else {
 
             let params = {
@@ -25,13 +21,13 @@ export default function Contact() {
                 sender_email:email,
                 message: message
             }
-            let res = await emailjs.send('service_1uebwag','template_s57dup6', params, 'LLY_bqRvlGpeZJNIC')
-                        
-            alert('thank you for trying out my contact page! Check out my resume or the links below for ways to contact me!')
-
+         
 
             setForm({ name: '', email: '', message: '' })
             window.location.reload(false)
+            // if(cat){
+            //     (<img href={cat.url}/>)
+            // }
         }
     }
 
@@ -46,11 +42,8 @@ export default function Contact() {
         if (e.target.name === 'email') {
             const valid = validEmail(e.target.value)
             if (!valid) {
-                alert('that email is invalid!')
+                alert('that email is invalid! If you used autofill, please try again')
             }
-        }
-        if (!e.target.value.length) {
-            alert(`${e.target.name} is empty! You need to put something!`);
         }
         const { name, value } = e.target
         setForm({ ...formState, [name]: value })
@@ -60,12 +53,12 @@ export default function Contact() {
 
     return (
         <div className='h-screen flex flex-col place-content-center w-full'>
-            <div className='flex flex-col justify-around '>
+            <div className='flex flex-col justify-around'>
 
                 <p className=' m-5 text-2xl text-center '>Lets connect! <br/> <br/> Fill out the form below and I will get back to you soon!</p>
 
                 <div name='infoForm' className='flex h-full flex-col'>
-                    <div className="flex flex-col self-center place-content-center contents-center w-2/3 p-6 rounded-lg shadow-lg bg-slate-200 bg-opacity-25">
+                    <div className="flex flex-col self-center place-content-center w-2/3 p-6 rounded-lg shadow-lg bg-slate-200 bg-opacity-25">
                         <form className='flex flex-col'>
                             <div className="form-group mb-6">
                                 <input type="text" onChange={handleChange} className="form-control block
@@ -125,28 +118,34 @@ export default function Contact() {
                                     placeholder="Message"
                                 ></textarea>
                             </div>
-                            <button type="submit" onClick={handleSubmit} className="
-      w-full
-      px-6
+                            <button type="button" onClick={handleSubmit}
+                            data-bs-toggle="modal" 
+                            data-bs-target="#exampleModalCenter"
+                            style={{border:'none'}}
+                            className="
+                            place-self-center
       py-2.5
       bg-blue-600
       text-white
-      font-medium
-      text-xs
+      text-xl
       leading-tight
       uppercase
-      rounded
+      rounded-full
       shadow-md
       hover:bg-blue-700 hover:shadow-lg
       focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
       active:bg-blue-800 active:shadow-lg
       transition
       duration-150
-      ease-in-out">Send</button>
+      ease-in-out
+      ">Send</button>
+     
                         </form>
                     </div >
                 </div>
             </div >
+           
+
         </div>)
 
 }
