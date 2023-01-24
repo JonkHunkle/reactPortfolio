@@ -2,16 +2,14 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import emailjs from '@emailjs/browser'
 
-
 export default function Contact() {
 
     const [formState, setForm] = useState({ name: '', email: '', message: '' })
     const { name, email, message } = formState;
 
     const handleSubmit =  async (e) => {
-            let {data:cat} = await axios.get(`https://api.thecatapi.com/v1/images/search`)
+            // let {data:cat} = await axios.get(`https://api.thecatapi.com/v1/images/search`)
         e.preventDefault();
-console.log(cat)
         if (name === '' || email === '' || message === '') {
             alert('You cannot send an empty form! If you used autofill, please try again.')
         } else {
@@ -21,7 +19,7 @@ console.log(cat)
                 sender_email:email,
                 message: message
             }
-            let res = await emailjs.send('service_1uebwag','template_s57dup6', params, 'LLY_bqRvlGpeZJNIC')
+            let res = await emailjs.send(process.env.REACT_APP_SERVICE,process.env.REACT_APP_TEMPLATE, params, process.env.REACT_APP_PASSWORD)
 
             setForm({ name: '', email: '', message: '' })
             window.location.reload(false)
