@@ -11,9 +11,9 @@ export default function Navbar(props) {
             !showSidebar ?
                 (
                     <div className=" fixed top-0 flex right-10 flex-col">
-                        <a
+                        <div
                             className=" flex w-auto bg-transparent h-auto text-4xl text-white items-center cursor-pointer self-center"
-                            onClick={() => setShowSidebar(!showSidebar)}> x                    </a>
+                            onClick={() => setShowSidebar(!showSidebar)}> x                    </div>
 
                         <Link to='/' className='hover:bg-zinc-300 h-1/3 flex flex-col justify-around navBtn' onClick={() => setShowSidebar(!showSidebar)}>Home</Link>
                         <Link to='/contact' className='hover:bg-zinc-300 h-1/3 flex flex-col justify-around navBtn' onClick={() => setShowSidebar(!showSidebar)}>Contact</Link>

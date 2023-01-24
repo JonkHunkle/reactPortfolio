@@ -57,3 +57,7 @@ button{
 height: auto;
 width: 2rem;
 }
+
+#projectsSections::-webkit-scrollbar{
+    background: transparent;
+}

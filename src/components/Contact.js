@@ -21,13 +21,13 @@ console.log(cat)
                 sender_email:email,
                 message: message
             }
-         
+            let res = await emailjs.send('service_1uebwag','template_s57dup6', params, 'LLY_bqRvlGpeZJNIC')
 
             setForm({ name: '', email: '', message: '' })
             window.location.reload(false)
-            // if(cat){
-            //     (<img href={cat.url}/>)
-            // }
+            if(res){
+                alert('Thanks for getting in contact! You will hear from  me soon! :)')
+            }
         }
     }
 
