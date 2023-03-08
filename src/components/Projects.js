@@ -75,7 +75,6 @@ export default function Projects() {
                             <p>React,
                                 Express,
                                 Node.js</p>
-
                     </div>
 
                     <div className='card carousel-item items-center justify-around place-content-center h-full md:w-1/3 w-full flex flex-col'>
