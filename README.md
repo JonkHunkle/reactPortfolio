@@ -11,4 +11,4 @@ This is my portfolio built with React, styled with TailwindCSS and DaisyUI, and 
 ## Contact Information 
 Github: [My Github!](https://github.com/JonkHunkle)
 
-Email: czerwinskicodes@gmail.com
+Email: czerwinskidavid1@gmail.com
