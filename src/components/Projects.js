@@ -1,7 +1,7 @@
 import React,{useRef, useEffect} from 'react'
 import techblog from '../assets/images/techblog.png'
 import synth from '../assets/images/Synth.png'
-import planner from '../assets/images/planner.png'
+import mernstore from '../assets/images/mernstore.png'
 import tracker from '../assets/images/lifetracker.png'
 import text from '../assets/images/text.png'
 
@@ -52,7 +52,7 @@ export default function Projects() {
                         <img src={techblog} className='h-1/3 w-fit' alt='techblog' ></img><a className='btn h-min w-fit text-2xl text-center hover:text-green-400' href="https://github.com/JonkHunkle/techblog" target='_blank'
                         rel="noreferrer">
                             Repo</a>
-                        <p className='text-center'>A bare-bones social connection site with user authentication.<br />Tools used:
+                        <p className='text-center'>A social connection site with user authentication.<br />Tools used:
                         </p>
                             <p>Handlebars,
                                 SQL,
@@ -62,19 +62,19 @@ export default function Projects() {
                     
 
                     <div className='card carousel-item items-center justify-around place-content-center h-full md:w-1/3 w-full flex flex-col'>
-                        <a href="https://jonkhunkle.github.io/Day-planner/" target="_blank"
+                        <a href="https://antique-store-frontend.onrender.com" target="_blank"
                             className='text-4xl btn self-center h-min hover:text-green-400'
-                            rel="noreferrer">Day Planner
+                            rel="noreferrer">MERN Store
                         </a>
-                        <img className='self-center h-1/3 w-auto' src={planner} alt='planner'/>
-                        <a href="https://github.com/JonkHunkle/Day-planner" target='_blank'
+                        <img className='self-center h-1/3 w-auto' src={mernstore} alt='planner'/>
+                        <a href="https://github.com/JonkHunkle/MERN_store" target='_blank'
                             className='text-2xl hover:text-green-400 btn w-fit self-center'
                             rel="noreferrer">Repo</a>
-                        <p className='text-center'>A planner that shows its user locally stored to-dos with time comparison logic.<br />
+                        <p className='text-center'>An inventory management system allowing users to create, read, update, and delete items.<br />
                         Tools used:</p>
-                            <p>HTML,
-                                CSS,
-                                JQuery</p>
+                            <p>React,
+                                Express,
+                                Node.js</p>
 
                     </div>
 
