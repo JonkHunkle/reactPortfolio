@@ -7,7 +7,6 @@ import React from 'react'
 import './index.css'
 import Footer from './components/Footer';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import mistyMountain from './assets/images/mistyMountain.jpeg'
 
 function App() {
 
