@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reactportfolio/static/css/main.c88b9b5b.css",
+    "main.js": "/reactportfolio/static/js/main.a1aa565e.js",
+    "static/media/david.jpeg": "/reactportfolio/static/media/david.dcae8547a54e7d73d043.jpeg",
+    "static/media/mistyMountain.jpeg": "/reactportfolio/static/media/mistyMountain.02f8e9f7785b6deaeef6.jpeg",
+    "static/media/lifetracker.png": "/reactportfolio/static/media/lifetracker.60dc0bf3dafcaac992c4.png",
+    "static/media/mernstore.png": "/reactportfolio/static/media/mernstore.82141ca2a3622f3fd121.png",
+    "static/media/techblog.png": "/reactportfolio/static/media/techblog.1640b4b5b44b2e638ca1.png",
+    "static/media/text.png": "/reactportfolio/static/media/text.6bc6e231f5cf6827f06c.png",
+    "static/media/resume.svg": "/reactportfolio/static/media/resume.d37d4842cdd22e79e8bbeaf5d6c3d4f6.svg",
+    "static/media/github-copilot.svg": "/reactportfolio/static/media/github-copilot.2cb36c83d222f2de58fe7dddc33efd32.svg",
+    "static/media/twitter-svg.svg": "/reactportfolio/static/media/twitter-svg.63a212a35a9238b441b45b203acf1ab4.svg",
+    "index.html": "/reactportfolio/index.html",
+    "static/media/linkedin.svg": "/reactportfolio/static/media/linkedin.b2aeca0a2d0eb3ad6138f309873f745a.svg",
+    "main.c88b9b5b.css.map": "/reactportfolio/static/css/main.c88b9b5b.css.map",
+    "main.a1aa565e.js.map": "/reactportfolio/static/js/main.a1aa565e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c88b9b5b.css",
+    "static/js/main.a1aa565e.js"
+  ]
+}
